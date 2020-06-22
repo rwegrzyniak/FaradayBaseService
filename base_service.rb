@@ -1,6 +1,6 @@
 class BaseService
   attr_reader :resp, :errors, :status, :client_error
-  # private_class_method :new
+  private_class_method :new
 
   MESS = 'Subclass have to implement call() method'.freeze
   RESERVED_NAME_ERR = 'Method name %<name>s is reserved for internaly use of %<class_name>s'.freeze
